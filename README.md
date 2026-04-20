@@ -1,13 +1,15 @@
 # Self Pruning Neural Network
 
-This project implements a neural network that learns to prune itself during training using gate parameters and L1 regularization.
+This project is about building a neural network that can reduce its own complexity while training. 
+It uses gate parameters along with L1 regularization to remove unnecessary weights and improve efficiency.
 
 ## Features
-- Custom PrunableLinear layer
-- Sparsity regularization
-- CIFAR-10 training
-- Accuracy vs Sparsity analysis
+- Implemented a custom PrunableLinear layer
+- Applied sparsity regularization
+- Trained on CIFAR-10 dataset
+- Compared model accuracy with sparsity levels
 
 ## Run
+
 pip install torch torchvision matplotlib
 python main.py
