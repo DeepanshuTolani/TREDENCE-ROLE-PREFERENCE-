@@ -9,5 +9,5 @@ This project implements a neural network that learns to prune itself during trai
 - Accuracy vs Sparsity analysis
 
 ## Run
-pip install torch torchvision matplotlib
+pip install torch torchvision matplotlib numpy
 python main.py
