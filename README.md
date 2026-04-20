@@ -11,5 +11,6 @@ It uses gate parameters along with L1 regularization to remove unnecessary weigh
 
 ## Run
 
+```bash
 pip install torch torchvision matplotlib
 python main.py
