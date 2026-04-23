@@ -1,19 +1,4 @@
-"""
-Self-Pruning Neural Network — Tredence AI Engineering Internship Case Study
-============================================================================
-Author  : [Your Name]
-Dataset : CIFAR-10
-Task    : Image Classification with Learnable Weight Pruning via Sigmoid Gates
 
-Architecture Overview
----------------------
-Each linear layer is replaced with a PrunableLinear layer that maintains a
-learnable `gate_scores` tensor (same shape as weights). During the forward
-pass, gates = sigmoid(gate_scores) are element-wise multiplied with weights.
-An L1 sparsity penalty on gates drives many of them toward exactly 0.
-
-Total Loss = CrossEntropyLoss + λ * L1(all gate values)
-"""
 
 import torch
 import torch.nn as nn
